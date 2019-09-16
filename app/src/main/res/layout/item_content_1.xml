@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/iv_cover"
+        android:layout_width="@dimen/dist_284"
+        android:layout_height="@dimen/dist_150"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic[1]" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_create_shard"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_cover" />
+
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dist_21"
+        android:layout_marginStart="@dimen/dist_12"
+        android:layout_marginLeft="@dimen/dist_12"
+        android:layout_marginBottom="@dimen/dist_12"
+        android:background="@drawable/bg_create_list_item_2"
+        android:gravity="center"
+        android:paddingStart="@dimen/dist_12"
+        android:paddingTop="@dimen/dist_3"
+        android:paddingEnd="@dimen/dist_12"
+        android:paddingBottom="@dimen/dist_3"
+        android:text="制作"
+        android:textColor="#813DFF"
+        android:textSize="@dimen/textSize_11"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/iv_cover" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/dist_12"
+        android:layout_marginLeft="@dimen/dist_12"
+        android:layout_marginBottom="@dimen/dist_5"
+        android:text="how much"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/textSize_16"
+        app:layout_constraintBottom_toTopOf="@+id/tv_des"
+        app:layout_constraintStart_toStartOf="@+id/iv_cover" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
